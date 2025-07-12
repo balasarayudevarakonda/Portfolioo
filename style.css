@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to bottom, #f0faff, #ffffff);
+  color: #1a1a1a;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: #121212;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00796B;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.projects,
+.resume-content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #00796B;
+  margin-bottom: 10px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: #00796B;
+  text-decoration: none;
+  display: block;
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #121212;
+  color: white;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
